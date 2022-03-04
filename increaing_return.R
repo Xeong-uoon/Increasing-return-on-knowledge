@@ -65,7 +65,7 @@ mat_mcp <- ifelse(mat_rca > 1, 1, 0)
 mat_multi <- t(mat_mcp)%*%mat_mcp
 
 #proximity를 계산하는 함수를 선언합니다.
-#자세한 내용은 sub-material : 행렬계산을 통한 proximity 부분을 참고해주세요.
+#자세한 내용은 코드정리를 참고해주세요.
 make_proximity <- function(mat){
   # mat is a product by product matrix of which element is the number of country that has RCA(i) over 1.
   # 대각원소를 선택합니다.
